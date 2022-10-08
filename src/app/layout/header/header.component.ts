@@ -18,7 +18,7 @@ export class NavItems{
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   faList = faPoll;
   title: string = "ZenduForms";
   navItems: NavItems[] = [
@@ -30,8 +30,5 @@ export class HeaderComponent implements OnInit {
     new NavItems("Workflow", "insert_chart", false)
   ];
     constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
