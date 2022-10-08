@@ -1,0 +1,57 @@
+<header class="navbar-light navbar-sticky header-static bg-brand px-3">
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <!-- Logo START -->
+            <a class="navbar-title text-decoration-none p-0 m-0 text-white" href="/">
+                <span>{{title}}</span>
+            </a>
+            <!-- Logo END -->
+
+            <!-- Responsive navbar toggler -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="text-body h6 d-none d-sm-inline-block">Menu</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main navbar START -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-scroll mx-auto">
+
+                    <li *ngFor="let item of navItems" class="nav-item {{item.isActive ? 'active' : ''}}"> 
+                        <a
+                            class="nav-link d-flex align-items-center text-white py-20px px-16px" href="/">
+                            <span class="material-symbols-outlined">
+                                {{item.icon}}
+                            </span>
+                            <span class="ms-2">{{item.itemName}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Main navbar END -->
+
+            <!-- Nav right START -->
+            <div class="nav flex-nowrap align-items-center">
+                <!-- Nav Button -->
+                <div class="nav-item d-none d-md-block">
+                    <a href="#" class="btn">
+                        <span class="material-symbols-outlined icon-notification text-white">
+                            notifications
+                        </span>
+                    </a>
+                </div>
+                <div class="nav-item d-none d-md-block">
+                    <a href="#" class="btn">
+                        <span class="material-symbols-outlined icon-notification text-white">
+                            logout
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Nav right END -->
+        </div>
+    </nav>
+    <!-- Logo Nav END -->
+</header>

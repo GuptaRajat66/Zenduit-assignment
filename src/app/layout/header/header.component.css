@@ -1,0 +1,14 @@
+.bg-brand{
+    background-color: #2188D9;
+}
+.navbar .navbar-brand span{
+    font-size: 32px;
+}
+
+.nav-item.active{
+  background-color: #1773BB;
+}
+
+.navbar-title span{
+    font-size: 32px;
+}
