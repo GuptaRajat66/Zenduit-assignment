@@ -20,7 +20,7 @@ export class NavItems{
 })
 export class HeaderComponent implements OnInit {
   faList = faPoll;
-  title: string = "Navbar";
+  title: string = "ZenduForms";
   navItems: NavItems[] = [
     new NavItems("Forms", "list", false),
     new NavItems("Customers", "group", false),
